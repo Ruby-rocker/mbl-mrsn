@@ -1,0 +1,35 @@
+%html
+	%body
+		%table
+			%tr
+				%td Hello
+			%tr
+				%td Kindly find my contact details and other information.
+			%tr
+				%td Email Id : 
+				%td
+					= @user.email
+			%tr
+				%td Phone : 
+				%td 
+					= @user.phone
+			%tr
+				%td Emergency Inquiry Level : 
+				%td
+					= @user.emergency_key
+			%tr
+				%td The Number of Brushes Needed : 
+				%td 
+					= @user.no_of_brushes_needed
+			%tr
+				%td The Best Time & Zone in Which We Can Reach to You : 
+				%td 
+					= @user.time_and_zone
+			%tr
+				%td Please let us know any additional comments :
+				%td 
+					= @user.comments
+			%tr
+			%tr
+			%tr
+				%td Thank You

@@ -1,0 +1,38 @@
+%h1 Listing users
+%table{:border => "1", :width => "100%"}
+  %tr
+    %th Emergency key
+    %th Blushes
+    %th Phone
+    %th Email
+    %th Time
+    %th TimeZone
+    %th Comment
+  - @users.each do |user|
+    %tr
+      %td= user.emergency_key
+      %td= user.no_of_brushes_needed
+      %td= user.phone
+      %td= user.email
+      %td= user.start_time
+      %td= user.time_zone
+      %td= user.comments
+%h1 Csv Data
+%table{:border => "1", :width => "100%"}
+  %tr
+    %th Name
+    %th Company
+    %th Designation
+    %th Email
+    %th location
+    %th Question
+    %th Answers
+  - @csv_file_data.each do |csv|
+    %tr
+      %td= csv.name
+      %td= csv.company
+      %td= csv.designation
+      %td= csv.email
+      %td= csv.location
+      %td= csv.question
+      %td= csv.answer
